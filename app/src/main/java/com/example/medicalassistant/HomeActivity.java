@@ -81,5 +81,23 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, HealthArticleActivity.class));
             }
         });
+
+        CardView bmi = findViewById(R.id.cardBMI);
+
+        bmi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, BMIActivity.class));
+            }
+        });
+
+        CardView notification = findViewById(R.id.cardBMI);
+
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, NotificationActivity.class));
+            }
+        });
     }
 }
