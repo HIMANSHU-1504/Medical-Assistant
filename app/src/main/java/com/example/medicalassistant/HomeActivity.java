@@ -91,12 +91,12 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        CardView notification = findViewById(R.id.cardBMI);
+        CardView notification = findViewById(R.id.cardMedecine);
 
         notification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, NotificationActivity.class));
+                startActivity(new Intent(HomeActivity.this, ReminderActivity.class));
             }
         });
     }
